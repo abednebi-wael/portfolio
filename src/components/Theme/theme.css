@@ -1,0 +1,25 @@
+#theme {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 95px;
+    right: 25px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+
+#sun {
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 0 0 10px white;
+}
+#moon {
+    color: black;
+    font-size: 2rem;
+    text-shadow: 0 0 10px black;
+}

@@ -1,0 +1,213 @@
+
+.skills-page {
+    top: 100px;
+}
+
+.home-container {
+    top: -200px;
+    left: 400px;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 40px;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-container .logo {
+    position: inherit;
+    margin-top: -50px;
+    height: 520px;
+    width: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.home-container .logo .main-img {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.home-container .logo .main-img.active {
+    animation: spin 8s linear 1s infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.home-container .logo .circle {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(4, 4, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+.home-container .logo .main-img.active .circle{
+    opacity: 1;
+}
+
+.home-container .logo .main-img.active .circle:nth-child(1){
+    background: url(../../assets/images/node.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-200%);
+}
+.home-container .logo .main-img.active .circle:nth-child(2){
+    background: url(../../assets/images/boot.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(200%, -200%);
+}
+.home-container .logo .main-img.active .circle:nth-child(3){
+    background: url(../../assets/images/express.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(330%);
+}
+.home-container .logo .main-img.active .circle:nth-child(4){
+    background: url(../../assets/images/mongo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(200%, 200%);
+}
+.home-container .logo .main-img.active .circle:nth-child(5){
+    background: url(../../assets/images/logo1.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(210%);
+}
+.home-container .logo .main-img.active .circle:nth-child(6){
+    background: url(../../assets/images/react.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-120%, 90%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(7){
+    background: url(../../assets/images/logo3.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-120%, -80%)
+}
+
+
+.home-container img {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid rgb(108, 161, 197);
+    transform: translate(-200px);
+    opacity: 0;
+    animation: fade-in 1s ease 1 0.5s forwards;
+}
+
+@keyframes fade-in {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 500px){
+    
+
+    .home-container{
+        margin-top: 80px;
+        max-height: 50px;
+        max-width: 50px;
+        margin-left: -340px;
+        
+    }
+    .skills-page h1 {
+        top: 10px;
+    }
+    .home-container .logo .main-img span {
+        width: 60px;
+        height: 60px;
+    }
+    .home-container .logo img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .home-container .logo .main-img.active .circle:nth-child(1){
+        background: url(../../assets/images/node.jpg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transform: translateY(-70%);
+    }
+    .home-container .logo .main-img.active .circle:nth-child(2){
+        background: url(../../assets/images/boot.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transform: translate(150%, -190%);
+    }
+    .home-container .logo .main-img.active .circle:nth-child(3){
+        background: url(../../assets/images/express.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transform: translate(400%);
+    }
+    .home-container .logo .main-img.active .circle:nth-child(4){
+        background: url(../../assets/images/mongo.jpg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transform: translate(10%, 100%);
+    }
+    .home-container .logo .main-img.active .circle:nth-child(5){
+        background: url(../../assets/images/logo1.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transform: translate(340% , 150%);
+    }
+    .home-container .logo .main-img.active .circle:nth-child(6){
+        background: url(../../assets/images/react.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transform: translate(160%, 200%);
+    }
+    
+    .home-container .logo .main-img.active .circle:nth-child(7){
+        background: url(../../assets/images/logo3.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transform: translate(330%, -150%)
+    }
+}
+
+ 
